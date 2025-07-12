@@ -1,72 +1,70 @@
-/* 🔷 Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* 🔷 Body Styling */
 body {
   font-family: "Segoe UI", sans-serif;
   background-color: #f9f9f9;
   color: #333;
-  line-height: 1.6;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-/* 🔷 Header */
 header {
-  text-align: center;
   background-color: #0078d7;
   color: white;
-  padding: 30px 0;
+  padding: 30px 10px;
 }
 
-header img {
-  display: block;
-  margin: 0 auto 10px;
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
 }
 
-/* 🔷 Banner */
-.banner {
-  text-align: center;
-  margin: 30px 0;
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #00bfa5;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #009e87;
 }
 
 .banner img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  margin: 20px 0;
 }
 
-/* 🔷 Products Section */
-.products {
+#urduContent {
+  font-family: 'Noto Nastaliq Urdu', serif;
+  direction: rtl;
+  padding: 0 20px;
+}
+
+section {
   padding: 20px;
 }
 
-.products h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.product-list {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.product-list img {
-  width: 150px;
-  border-radius: 6px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
-
-/* 🔷 Footer */
 footer {
-  text-align: center;
+  background-color: #0078d7;
+  color: white;
   padding: 20px;
-  background-color: #eee;
-  margin-top: 40px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
 }
 

@@ -1,25 +1,59 @@
-<button onclick="toggleLanguage()">اردو / English</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PakTronics 🔌</title>
+  <link rel="stylesheet" href="style.css?v=2" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
-<div id="englishContent">
-  <h2>Our Innovations</h2>
-  <p>High-speed chargers, Bluetooth handsfree, and ergonomic headsets.</p>
-</div>
+  <!-- Urdu font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet" />
 
-<div id="urduContent" style="display:none;">
-  <h2>ہماری اختراعات</h2>
-  <p>ہائی سپیڈ چارجرز، بلوٹوتھ ہینڈزفری، اور آرام دہ ہیڈ سیٹ۔</p>
-</div>
+  <!-- Cache busting -->
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="pragma" content="no-cache" />
+</head>
+<body>
 
-<script>
-  function toggleLanguage() {
-    const en = document.getElementById('englishContent');
-    const ur = document.getElementById('urduContent');
-    en.style.display = en.style.display === 'none' ? 'block' : 'none';
-    ur.style.display = ur.style.display === 'none' ? 'block' : 'none';
-  }
-</script>
+  <header>
+    <img src="images/logo.png" alt="PakTronics Logo" class="logo" />
+    <h1>PakTronics 🔌 — Where Design Meets Precision</h1>
+    <button onclick="toggleLanguage()">اردو / English</button>
+  </header>
 
-<meta http-equiv="cache-control" content="no-cache" />
-<meta http-equiv="expires" content="0" />
-<meta http-equiv="pragma" content="no-cache" />
+  <section class="banner">
+    <img src="images/banner.png" alt="Main Banner" />
+  </section>
+
+  <section id="englishContent">
+    <h2>Our Innovations</h2>
+    <p>High-speed chargers, Bluetooth handsfree, and ergonomic headsets — designed for seamless living.</p>
+  </section>
+
+  <section id="urduContent" style="display: none;">
+    <h2>ہماری اختراعات</h2>
+    <p>ہائی سپیڈ چارجرز، بلوٹوتھ ہینڈزفری، اور آرام دہ ہیڈ سیٹ — زندگی کو آسان بنانے کے لیے ڈیزائن کیے گئے۔</p>
+  </section>
+
+  <a href="https://wa.me/923001234567" target="_blank" class="whatsapp-float">
+    <img src="images/whatsapp-icon.png" alt="WhatsApp Chat" />
+  </a>
+
+  <footer>
+    <p>Contact us: <a href="mailto:info@paktronics.com">info@paktronics.com</a></p>
+  </footer>
+
+  <script>
+    function toggleLanguage() {
+      const en = document.getElementById('englishContent');
+      const ur = document.getElementById('urduContent');
+      en.style.display = en.style.display === 'none' ? 'block' : 'none';
+      ur.style.display = ur.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>
 
