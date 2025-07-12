@@ -46,14 +46,15 @@ button:hover {
   padding: 0 20px;
 }
 
-section {
-  padding: 20px;
+#englishContent {
+  padding: 0 20px;
 }
 
 footer {
   background-color: #0078d7;
   color: white;
   padding: 20px;
+  margin-top: 30px;
 }
 
 .whatsapp-float {
@@ -67,4 +68,3 @@ footer {
 .whatsapp-float:hover {
   transform: scale(1.1);
 }
-
