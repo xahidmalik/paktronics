@@ -5,16 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PakTronics 🔌</title>
 
-  <!-- Stylesheet with cache busting -->
-  <link rel="stylesheet" href="style.css?v=2" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico?v=1" type="image/x-icon" />
+  <!-- Embedded Favicon (PNG Base64) -->
+  <link rel="icon" type="image/png"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4
+    //8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==" />
 
   <!-- Urdu font -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet" />
 
-  <!-- Cache busting -->
+  <!-- Stylesheet with cache busting -->
+  <link rel="stylesheet" href="style.css?v=2" />
+
+  <!-- Cache busting meta tags -->
   <meta http-equiv="cache-control" content="no-cache" />
   <meta http-equiv="expires" content="0" />
   <meta http-equiv="pragma" content="no-cache" />
@@ -22,13 +24,27 @@
 <body>
 
   <header>
-    <img src="images/logo.png" alt="PakTronics Logo" class="logo" />
+    <!-- Embedded Logo (PNG Base64) -->
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA
+    IAAAAAgCAYAAABpKWVRAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAA
+    AABf5+UAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAgY0hSTQAAeiYAAIC
+    RAAD5/wAAoUgAADqYAAAX1AAAHpcDTgAAAAZiS0dEAP8A/wD/oL2nkwAA
+    AAlwSFlzAAALEQAACxEBf2RfkQAAABxpRE9UAAAAAgAAAAAAAAAgAAAA
+    AAAAQAAADjUoXEAAAAHdElNRQflBhwDNDuFVsbsAAACM0lEQVRo3u3Yv
+    WvVUBjH8c+YI2N1m3bRDgYgJCYEb2DIxMTAwMTAwMTAwhEY8DQgMyMHr6
+    9utYPK/MJ63nPI3kgSGEEEIIIYQQQgghhBBy50SVqqtfiRdNGWWm9xCv1
+    /Q3VfEv1l6Y7O2H22aEYXfWjLr51xwRwhBByxC233EXHXNKgXNJ8zrPFt
+    2Rf/NcRzrxsodJ/ZwvRQv2NrFe1NKkWydUfuMT19iiGEEEIIIYQQQvgt/gHH
+    SWD3t9FEbfwAAAABJRU5ErkJggg==" 
+    alt="PakTronics Logo" class="logo" />
+    
     <h1>PakTronics 🔌 — Where Design Meets Precision</h1>
     <button onclick="toggleLanguage()">اردو / English</button>
   </header>
 
   <section class="banner">
-    <img src="images/banner.png" alt="Main Banner" />
+    <img src="images/banner.png" alt="Main Banner"
+      onerror="this.style.display='none';" />
   </section>
 
   <section id="englishContent">
@@ -42,7 +58,8 @@
   </section>
 
   <a href="https://wa.me/923001234567" target="_blank" class="whatsapp-float">
-    <img src="images/whatsapp-icon.png" alt="WhatsApp Chat" />
+    <img src="images/whatsapp-icon.png" alt="WhatsApp Chat"
+      onerror="this.style.display='none';" />
   </a>
 
   <footer>
@@ -57,6 +74,6 @@
       ur.style.display = ur.style.display === 'none' ? 'block' : 'none';
     }
   </script>
-
 </body>
 </html>
+
