@@ -1,45 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PakTronics 🔌</title>
-  <style>
-    body {
-      font-family: "Segoe UI", sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      text-align: center;
-      padding: 20px;
-    }
-    header, footer { background-color: #0078d7; color: white; padding: 20px; }
-    .banner img, .product-list img { max-width: 100%; height: auto; margin: 10px; border-radius: 8px; }
-    .product-list { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
-  </style>
-</head>
-<body>
+<button onclick="toggleLanguage()">اردو / English</button>
 
-  <header>
-    <h1>Welcome to PakTronics 🔌</h1>
-  </header>
+<div id="englishContent">
+  <h2>Our Innovations</h2>
+  <p>High-speed chargers, Bluetooth handsfree, and ergonomic headsets.</p>
+</div>
 
-  <section class="banner">
-    <img src="images/banner.png" alt="Banner" />
-  </section>
+<div id="urduContent" style="display:none;">
+  <h2>ہماری اختراعات</h2>
+  <p>ہائی سپیڈ چارجرز، بلوٹوتھ ہینڈزفری، اور آرام دہ ہیڈ سیٹ۔</p>
+</div>
 
-  <section class="products">
-    <h2>Our Innovations</h2>
-    <div class="product-list">
-      <img src="images/charger.jpg" alt="Charger" />
-      <img src="images/bluetooth-handsfree.jpg" alt="Handsfree" />
-      <img src="images/headset.jpg" alt="Headset" />
-    </div>
-  </section>
-
-  <footer>
-    <p>Contact us: info@paktronics.com</p>
-  </footer>
-
-</body>
-</html>
+<script>
+  function toggleLanguage() {
+    const en = document.getElementById('englishContent');
+    const ur = document.getElementById('urduContent');
+    en.style.display = en.style.display === 'none' ? 'block' : 'none';
+    ur.style.display = ur.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
 
